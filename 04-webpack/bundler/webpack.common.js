@@ -4,7 +4,7 @@ const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 module.exports = {
-  entry: path.resolve(__dirname, "../src/06-animation/script.js"),
+  entry: path.resolve(__dirname, "../src/07-camera/script.js"),
   output: {
     hashFunction: "xxhash64",
     filename: "bundle.[contenthash].js",
@@ -16,7 +16,7 @@ module.exports = {
       patterns: [{ from: path.resolve(__dirname, "../static") }],
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "../src/06-animation/index.html"),
+      template: path.resolve(__dirname, "../src/07-camera/index.html"),
       minify: true,
     }),
     new MiniCSSExtractPlugin(),
